@@ -1,0 +1,13 @@
+/* ==========================================================================
+   #SHOPIFY SNIPPET/COMPONENT: SKIP TO CONTENT (A11Y)
+   ========================================================================== */
+
+.c-skip-to-content {
+  background-color: #eee;
+  display: flex;
+  font-family: $font-body-family;
+  font-weight: bold;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 99;
+}

@@ -1,0 +1,23 @@
+/* ==========================================================================
+   #SPACING UTILITIES
+   ========================================================================== */
+
+/**
+ * Utility classes to put specific spacing values onto elements. The below loop
+ * will generate us a suite of classes like:
+ *
+ *   .u-pv-sm {}
+ *   .u-pv-sm {}
+ *
+ *
+ */
+
+.u-pv-sm {
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+.u-ph-sm {
+  padding-left: 1em;
+  padding-right: 1em;
+}

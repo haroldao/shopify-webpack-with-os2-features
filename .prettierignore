@@ -1,0 +1,6 @@
+# Env files #
+######################
+node_modules
+*.config.js
+assets
+.eslintrc.js

@@ -1,0 +1,52 @@
+{
+  "name": "shopify-webpack-with-os2-features",
+  "version": "1.0.0",
+  "main": "theme.js",
+  "repository": "https://github.com/younessidbakkasse/shopify-webpack-with-os2-features.git",
+  "author": "Youness Id bakkasse <std.youness@gmail.com>",
+  "license": "MIT",
+  "prettierIgnore": [
+    "assets"
+  ],
+  "browserslist": [
+    "> 0.25%",
+    "not dead"
+  ],
+  "scripts": {
+    "start": "yarn build && yarn serve",
+    "build": "webpack",
+    "watch": "webpack watch",
+    "serve": "shopify theme serve",
+    "zip": "shopify theme package .",
+    "lint": "shopify theme check -a && eslint --cache --fix",
+    "format": "prettier --write .",
+    "prepare": "husky install",
+    "log": "git log --graph --oneline --decorated"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "babel-loader": "^8.2.2",
+    "copy-webpack-plugin": "^9.0.1",
+    "css-loader": "^5.2.6",
+    "eslint": "^7.29.0",
+    "eslint-config-prettier": "^8.3.0",
+    "husky": "^7.0.0",
+    "lint-staged": ">=10",
+    "mini-css-extract-plugin": "^1.6.2",
+    "postcss": "^8.3.5",
+    "postcss-loader": "^6.1.0",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.3.2",
+    "sass": "^1.35.1",
+    "sass-loader": "^12.1.0",
+    "webpack": "^5.41.1",
+    "webpack-cli": "^4.7.2"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.{js,scss,json}": "prettier --write",
+    "*.liquid": "shopify theme check -a"
+  },
+  "dependencies": {}
+}
