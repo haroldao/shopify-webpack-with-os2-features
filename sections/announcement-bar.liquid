@@ -1,14 +1,14 @@
-{%- if section.settings.show_announcement -%}
+{% if section.settings.show_announcement %}
   {% if section.settings.home_page_only == false or request.page_type == 'index' %}
   <style>
     .s-announcement-bar {
-      background-color: {{- section.settings.announcement_bg_color -}}
+      background-color: {{ section.settings.announcement_bg_color }}
     }
 
     .s-announcement-bar_link,
     .s-announcement-bar_message,
     .s-announcement-bar_social-link {
-      color: {{- section.settings.announcement_color -}}
+      color: {{ section.settings.announcement_color }}
     }
   </style>
   <div class="s-announcement-bar" data-section-id="{{ section.id }}">
@@ -16,12 +16,12 @@
       <div class="s-announcement-bar_wrapper">
         <nav class="s-announcement-bar_navigation" role="navigation">
           <ul class="s-announcement-bar_list">
-          {%- assign nav_list = section.settings.announcement_menu.links | slice: 0, 4 -%}
-          {%- for link in nav_list -%}
+          {% assign nav_list = section.settings.announcement_menu.links | slice: 0, 4 %}
+          {% for link in nav_list %}
             <li class="s-announcement-bar_item">
               <a href="{{ link.url }}" class="announcement-bar_link">{{ link.title }}</a>
             </li>
-          {%- endfor -%}
+          {% endfor %}
           </ul>
         </nav>
         <div class="s-announcement-bar_message-wrapper">
@@ -31,13 +31,13 @@
           <ul class="s-announcement-bar_socials-list" role="list" aria-label="Announcement social links">
             <li class="s-announcement-bar_socials-item">
               <a href="#" class="s-announcement-bar_social-link" aria-description="Link to our Tiktok account.">
-                {%- render 'icons' icon: 'account' -%}
+                {% render 'icons' icon: 'account' %}
                 <span class="sr-only">Tiktok</span>
               </a>
             </li>
             <li class="s-announcement-bar_socials-item">
               <a href="#" class="s-announcement-bar_social-link" aria-description="Link to our Twitter account.">
-                {%- render 'icons' icon: 'close' -%}
+                {% render 'icons' icon: 'close' %}
                 <span class="u-hidden-visually">Twitter</span>
               </a>
             </li>
@@ -46,8 +46,8 @@
       </div>
     </div>
   </div>
-  {%- endif -%}
-{%- endif -%}
+  {% endif %}
+{% endif %}
 
 
 {% schema %}

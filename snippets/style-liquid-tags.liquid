@@ -3,11 +3,11 @@
     renders font-face for shopify typography.
 
     Usage:
-    {%- render 'style-liquid-tags' -%}
+    {% render 'style-liquid-tags' %}
 {% endcomment %}
 
 
-{%- style -%}
+{% style %}
   :root {
     --color-brand-primary: {{ settings.color_brand_primary }};
     --color-brand-secondary: {{ settings.color_brand_secondary }};
@@ -27,13 +27,13 @@
     --font-body-size: {{ settings.font_body_size }};
   }
 
-  {{- settings.font_heading | font_modify: 'weight', '300' | font_face: font_display: 'swap' -}}
-  {{- settings.font_heading | font_modify: 'weight', 'normal' | font_face: font_display: 'swap' -}}
-  {{- settings.font_heading | font_modify: 'weight', 'bold' | font_face: font_display: 'swap' -}}
-  {{- settings.font_heading | font_modify: 'weight', '800' | font_face: font_display: 'swap' -}}
-  {{- settings.font_body | font_modify: 'weight', '300' | font_face: font_display: 'swap' -}}
-  {{- settings.font_body | font_modify: 'weight', 'normal' | font_face: font_display: 'swap' -}}
-  {{- settings.font_body | font_modify: 'weight', 'bold' | font_face: font_display: 'swap' -}}
-  {{- settings.font_body | font_modify: 'weight', '800' | font_face: font_display: 'swap' -}}
-{%- endstyle -%}
+  {{ settings.font_heading | font_modify: 'weight', '300' | font_face: font_display: 'swap' }}
+  {{ settings.font_heading | font_modify: 'weight', 'normal' | font_face: font_display: 'swap' }}
+  {{ settings.font_heading | font_modify: 'weight', 'bold' | font_face: font_display: 'swap' }}
+  {{ settings.font_heading | font_modify: 'weight', '800' | font_face: font_display: 'swap' }}
+  {{ settings.font_body | font_modify: 'weight', '300' | font_face: font_display: 'swap' }}
+  {{ settings.font_body | font_modify: 'weight', 'normal' | font_face: font_display: 'swap' }}
+  {{ settings.font_body | font_modify: 'weight', 'bold' | font_face: font_display: 'swap' }}
+  {{ settings.font_body | font_modify: 'weight', '800' | font_face: font_display: 'swap' }}
+{% endstyle %}
 

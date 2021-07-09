@@ -2,17 +2,17 @@
     Renders all related SEO meta tags in the head
 
     Usage:
-    {%- render 'seo-meta-tags' -%}
+    {% render 'seo-meta-tags' %}
 {% endcomment %}
 
-{%- if page_title != blank -%}
+{% if page_title != blank %}
   <title>{{ page_title | escape }}</title>
-{%- endif -%}
+{% endif %}
 
-{%- if page_description != blank -%}
+{% if page_description != blank %}
     <meta name="description" content="{{ page_description | escape }}">
-{%- endif -%}
+{% endif %}
 
-{%- if canonical_url != blank -%}
+{% if canonical_url != blank %}
     <link rel="canonical" href="{{ canonical_url }}">
-{%- endif -%}
+{% endif %}
