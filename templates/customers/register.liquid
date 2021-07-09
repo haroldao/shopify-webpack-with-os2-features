@@ -5,17 +5,17 @@
 {{ form.errors | default_errors }}
 
 <label for="first_name">First Name</label>
-<input type="text" value="" name="customer[first_name]" size="30" />
+<input type="text" value="" name="customer[first_name]" size="30" aria-label="First Name"/>
 
 <label for="last_name">Last Name</label>
-<input type="text" value="" name="customer[last_name]" size="30" />
+<input type="text" value="" name="customer[last_name]" size="30" aria-label="Last Name"/>
 
 <label for="email">Email Address</label>
-<input type="email" value="" name="customer[email]" size="30" />
+<input type="email" value="" name="customer[email]" size="30" aria-label="Email Address"/>
 
 <label for="password">Password</label>
-<input type="password" value="" name="customer[password]" size="30" />
+<input type="password" value="" name="customer[password]" size="30" aria-label="Password"/>
 
-<input type="submit" value="Create" />
+<input type="submit" value="Create" aria-label="Submit"/>
 
 {% endform %}
