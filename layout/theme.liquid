@@ -14,11 +14,7 @@
     {% if page_description %}
     <meta name="description" content="{{ page_description | escape }}">
     {% endif %}
-    
-    {% if settings.favicon != blank %}
-      <link rel="icon" type="image/png" href="{{ settings.favicon | img_url: '32x32' }}">
-    {% endif %}
-
+  
     {% if canonical_url != blank %}
       <link rel="canonical" href="{{ canonical_url }}">
     {% endif %}
