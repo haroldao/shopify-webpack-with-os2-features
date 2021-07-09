@@ -6,34 +6,34 @@
 {{ form.errors | default_errors }}
 
 <label for="first_name">First Name</label>
-<input type="text" value="" name="address[first_name]" size="30" />
+<input type="text" value="" name="address[first_name]" size="30" aria-label="First Name"/>
 
 <label for="last_name">Last Name</label>
-<input type="text" value="" name="address[last_name]" size="30" />
+<input type="text" value="" name="address[last_name]" size="30" aria-label="Last Name"/>
 
 <label for="company">Company</label>
-<input type="text" value="" name="address[company]" />
+<input type="text" value="" name="address[company]" aria-label="Company" />
 
 <label for="address1">Address 1</label>
-<input type="text" value="" name="address[address1]" />
+<input type="text" value="" name="address[address1]" aria-label="Address 1"/>
 
 <label for="address2">Address 2</label>
-<input type="text" value="" name="address[address2]" />
+<input type="text" value="" name="address[address2]" aria-label="Address 2"/>
 
 <label for="city">City</label>
-<input type="text" value="" name="address[city]" />
+<input type="text" value="" name="address[city]" aria-label="City"/>
 
 <!-- See docs for @shopify/theme-addresses to support Country and Province -->
 <label for="country">Country</label>
-<select name="address[country]" /></select>
+<select name="address[country]"></select>
 
 <label for="province">Province</label>
-<select name="address[province]" /></select>
+<select name="address[province]"></select>
 
 <label for="zip">Zip/Post Code</label>
-<input type="text" value="" name="address[zip]" />
+<input type="text" value="" name="address[zip]" aria-label="Zip/Post Code"/>
 
 <label for="phone">Phone Number</label>
-<input type="tel" value="" name="address[phone]" />
+<input type="tel" value="" name="address[phone]" aria-label="Phone Number"/>
 
 {% endform %}
