@@ -2,8 +2,8 @@
   "name": "shopify-webpack-with-os2-features",
   "version": "1.0.0",
   "main": "theme.js",
-  "repository": "https://github.com/younessidbakkasse/shopify-webpack-with-os2-features.git",
-  "author": "Youness Id bakkasse <std.youness@gmail.com>",
+  "repository": "https://github.com/haroldao/shopify-webpack-with-os2-features.git",
+  "author": "Harold AO <contact@haroldao.com>",
   "license": "MIT",
   "prettierIgnore": [
     "assets"
