@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    
+
     {% if settings.primary_color %}
       <meta name="theme-color" content="{{ settings.primary_color }}">
       <meta name="msapplication-TileColor" content="{{ settings.primary_color }}">
@@ -33,7 +33,6 @@
     <!-- BEGIN Header hook for plugins -->
     {{ content_for_header }}
     <!-- END Header hook for plugins -->
-    <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
   </head>
   <body>
     {% render 'skip-to-content' %}
