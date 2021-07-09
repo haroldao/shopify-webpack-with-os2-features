@@ -3,15 +3,15 @@
 {{ form.errors | default_errors }}
 <div class="password">
   <label for="password">Password</label>
-  <input type="password" name="customer[password]" />
+  <input type="password" name="customer[password]" aria-label="/" />
 </div>
 <div class="password_confirm">
   <label for="password_confirmation">Password Confirmation</label>
-  <input type="password" name="customer[password_confirmation]" />
+  <input type="password" name="customer[password_confirmation]" aria-label="/" />
 </div>
 <div class="action_bottom">
-  <input type="submit" value="Activate Account" />
+  <input type="submit" value="Activate Account" aria-label="/" />
   <span>or</span>
-  <input type="submit" name="decline" value="Decline Invitation" />
+  <input type="submit" name="decline" value="Decline Invitation" aria-label="/" />
 </div>
 {% endform %}
